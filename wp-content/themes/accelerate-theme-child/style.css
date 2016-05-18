@@ -26,3 +26,56 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
+/* Lesson Challenge: Add a Blog Post to The Homepage */
+/* http://skillcrush.com/skill-challenges/add-blog-post-homepage/ */
+.blog-post {
+	width: 50%;
+}
+.blog-post h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+.blog-post h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+.blog-post .read-more-link {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+/* END */
+/* blog post on homepage - GitHub solution version */
+/* https://github.com/skillcrush/accelerate/blob/homepage-add-blog-post/wp-content/themes/accelerate-theme-child/style.css */
+/*
+.recent-posts {
+	overflow: hidden;
+}
+.blog-post {
+	width: 44.75%;
+	padding-right: 50px;
+	float: left;
+}
+.blog-post h4 {
+	font: 16px 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.blog-post h2 {
+	font: 700 24px 'Montserrat';
+	margin: 36px 0;
+}
+.blog-post .read-more-link {
+	font: 700 15px 'Montserrat';
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+*/
+/* END */
