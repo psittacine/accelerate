@@ -27,8 +27,27 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+/* case studies - from GitHub */
+#masthead nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-menu {
+margin:0;
+}
+
+.nav-menu ul li {
+	float:left;
+	margin:0 30px;
+	text-transform:uppercase;
+}
+/* END */
+
+
 /* Lesson Challenge: Add a Blog Post to The Homepage */
 /* http://skillcrush.com/skill-challenges/add-blog-post-homepage/ */
+/*
 .blog-post {
 	width: 50%;
 }
@@ -50,12 +69,19 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+*/
 /* END */
 /* blog post on homepage - GitHub solution version */
 /* https://github.com/skillcrush/accelerate/blob/homepage-add-blog-post/wp-content/themes/accelerate-theme-child/style.css */
 /*
 .recent-posts {
 	overflow: hidden;
+}
+*/
+.recent-posts {
+    clear: both;
+    margin: 100px 0 0;
+    overflow: hidden;
 }
 .blog-post {
 	width: 44.75%;
@@ -77,5 +103,57 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+/* END */
+
+/* Lesson Challenge: Edit Your Single Case Studies Page */
+/* http://skillcrush.com/skill-challenges/edit-single-case-studies-page/ */
+/* Case Studies - GitHub solution */
+/* https://github.com/skillcrush/accelerate/blob/case-studies-static/wp-content/themes/accelerate-theme-child/style.css */
+article.case-study {
+    clear: both;
+    margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+float: left;
+width: 314px;
+margin: 0 40px 0 0;
+}
+
+aside.case-study-sidebar h5 {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33333;
+    margin: 0 0 12px;
+}
+
+aside.case-study-sidebar h6 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 50px;
+}
+
+/* my edit */
+aside.case-study-sidebar a {
+    font-weight: bold;
+}
+
+div.case-study-images {
+	float:left;
+	width:606px;
+}
+
+/*
+div.case-study-images img {
+	margin-bottom:50px;
+	border:1px solid #dddddd;
+}
 */
+
+div.case-study-images img {
+    border: 1px solid #dddddd;
+    margin-bottom: 100px;
+}
 /* END */
