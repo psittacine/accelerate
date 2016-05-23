@@ -45,6 +45,46 @@ margin:0;
 /* END */
 
 
+/* Lesson Challenge: Add featured work to the homepage */
+/* http://skillcrush.com/skill-challenges/eet-1/ */
+/* https://github.com/skillcrush/accelerate/blob/case-studies-archive/wp-content/themes/accelerate-theme-child/style.css */
+/* Featured work on homepage */
+.featured-work {
+	overflow:auto;
+}
+
+.featured-work h4 {
+	font-family:'Montserrat';
+	text-transform:uppercase;
+	text-align:center;
+	margin:0 0 40px;
+}
+
+.featured-work ul {
+	margin:0;
+}
+
+.individual-featured-work {
+    float: left;
+    list-style-type: none;
+    margin: 0 5% 0 0;
+    width: 31%;
+}
+
+.individual-featured-work h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.individual-featured-work:nth-child(3n) {
+    margin: 0;
+    width: 31%;
+}
+/* END*/
+
+
 /* Lesson Challenge: Add a Blog Post to The Homepage */
 /* http://skillcrush.com/skill-challenges/add-blog-post-homepage/ */
 /*
