@@ -12,6 +12,14 @@
 
 @import url("../accelerate-theme/style.css");
 
+/* Keep images contained within their parent element */
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 
 /* Homepage Styles */
 .home-page {
