@@ -210,6 +210,51 @@ div.case-study-images img {
 /* END */
 
 
+/* START Contact Us form */
+
+/* Form wrapper */
+div#content {
+  width: 640px;
+  margin: auto;
+}
+
+/* Field Labels */
+label#ninja_forms_field_1_label,
+label#ninja_forms_field_2_label,
+label#ninja_forms_field_3_label {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+div#ninja_forms_field_1_div_wrap,  /* NAME */
+div#ninja_forms_field_2_div_wrap {  /* EMAIL */
+  float: left;
+  width: 310px;
+}
+
+div#ninja_forms_field_1_div_wrap {
+  margin-right: 20px;
+}
+
+div#ninja_forms_field_3_div_wrap {  /* MESSAGE */
+  clear: both;
+  width: 640px;
+}
+
+/* Send button */
+input#ninja_forms_field_4 {
+  float: right;
+  background: none repeat scroll 0 0 #45ac9d;
+  color: white;
+  font-family: "montserrat";
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 80px;
+  text-align: center;
+}
+
+/* END Contact Us form */
+
 
 /*  OUTLINE BOXES  */
 /*
