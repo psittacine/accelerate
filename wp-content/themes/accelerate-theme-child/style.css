@@ -12,6 +12,14 @@
 
 @import url("../accelerate-theme/style.css");
 
+/* Keep images contained within their parent element */
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 
 /* Homepage Styles */
 .home-page {
@@ -243,6 +251,22 @@ input#ninja_forms_field_4 {
   font-weight: bold;
   padding: 15px 80px;
   text-align: center;
+}
+
+/* Success Message */
+.contact-form-success-msg-header {
+  font-family: "montserrat";
+  font-size: 35px;
+  font-weight: bold;
+  color: #45ac9d;
+  text-align: center;
+  /* line-height: 45px; */
+}
+
+.contact-form-success-msg-body {
+  font-size: 20px;
+  text-align: center;
+  /* line-height: 27.5px; */
 }
 
 /* END Contact Us form */
