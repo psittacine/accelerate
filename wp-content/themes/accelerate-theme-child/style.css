@@ -218,6 +218,11 @@ div#content {
   margin: auto;
 }
 
+/* Form title & body, hide when form submitted */
+.contact-form-title-body-submitted {
+  visibility: hidden;
+}
+
 /* Field Labels */
 label#ninja_forms_field_1_label,
 label#ninja_forms_field_2_label,
