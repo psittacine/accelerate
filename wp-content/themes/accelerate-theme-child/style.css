@@ -218,6 +218,11 @@ div#content {
   margin: auto;
 }
 
+/* Form title & body, hide when form submitted */
+.contact-form-title-body-submitted {
+  visibility: hidden;
+}
+
 /* Field Labels */
 label#ninja_forms_field_1_label,
 label#ninja_forms_field_2_label,
@@ -251,6 +256,22 @@ input#ninja_forms_field_4 {
   font-weight: bold;
   padding: 15px 80px;
   text-align: center;
+}
+
+/* Success Message */
+.contact-form-success-msg-header {
+  font-family: "montserrat";
+  font-size: 35px;
+  font-weight: bold;
+  color: #45ac9d;
+  text-align: center;
+  /* line-height: 45px; */
+}
+
+.contact-form-success-msg-body {
+  font-size: 20px;
+  text-align: center;
+  /* line-height: 27.5px; */
 }
 
 /* END Contact Us form */
