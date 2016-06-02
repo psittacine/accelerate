@@ -276,6 +276,154 @@ input#ninja_forms_field_4 {
 
 /* END Contact Us form */
 
+/* About page */
+
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    margin: 0 0 55px 0; /* space btw bottom of image and start of next section below */
+    padding: 5rem 0 1.5rem 0;
+}
+
+.about-hero-text {
+  width: 558px;
+  margin: auto;
+}
+
+.about-hero-text h3 {
+  font-weight: 600;
+  line-height: 1.4
+}
+
+.hero-body-first-word {
+  color: #45ac9d;
+}
+
+/* clearfix */  /*
+.container {
+	overflow:auto;  // Apply to container of floated elements to clear the floats
+  word-wrap: break-word;  // forces long text to wrap
+}
+*/
+
+/*  Prevent img from exceeding container boundary  */  /*
+.container img {
+	max-width: 100%;
+	height: auto;
+}
+*/
+
+.our-services-text {
+  width: 790px;
+  margin: 0 auto 70px auto;
+  text-align:center;
+  font-size: 1rem;
+}
+
+h5.our-services-title{
+  font-family:'Montserrat';
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.617;
+}
+
+.services-container {
+  width: 790px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section.services-content {
+  margin-bottom: 70px;
+}
+
+.services-content-container {
+  overflow:auto;
+  width: 790px;
+  margin: 0 -10px;
+}
+
+.services-content h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/*
+.CLASS:nth-child(even) {}
+.CLASS:nth-child(odd) {}
+*/
+
+.fig-odd {
+  float: left;
+  max-width: 216px;
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+
+div.txt-odd {
+  float: left;
+  width: 540px;
+  margin: -28px 0 0 0;
+  padding: 0 0 0 34px;
+  vertical-align: top;
+}
+
+.txt-odd p {
+  font-size: 1rem;
+}
+
+.fig-even {
+  float: right;
+  max-width: 216px;
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+
+div.txt-even {
+  float: right;
+  width: 540px;
+  margin: -28px 0 0 0;
+  padding: 0 34px 0 0;
+  vertical-align: top;
+}
+
+.txt-even p {
+  font-size: 1rem;
+}
+
+/* 15px more to next section */
+
+.divider-line {
+  border-top: 1px dotted #e3e1e1;
+  /* padding-top: 20px; */
+
+  padding: 15px 0 40px 0;
+}
+
+
+.contact-us-content p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a.about-button {
+  background: none repeat scroll 0 0 #45ac9d;
+  color: white;
+  font-family: "montserrat";
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 18px 68px;
+  text-align: center;
+  margin-left: 41px;
+}
+
+/* END About page */
+
+
 
 /*  OUTLINE BOXES  */
 /*
