@@ -50,6 +50,37 @@ margin:0;
 	margin:0 30px;
 	text-transform:uppercase;
 }
+
+/* my nav-menu styles */
+li.menu-item {
+  display: inline;
+  text-transform:uppercase;
+  font-size: 0.85rem;
+  margin: 0 15px;
+}
+
+li.current-menu-item {
+  font-weight: bold;
+}
+
+/*
+li.menu-item-13 {
+  background: url(//localhost/skillcrush/accelerate/wp-content/uploads/2016/06/twitter-icon.png) no-repeat;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+}
+
+li.menu-item-14 {
+  background: url(//localhost/skillcrush/accelerate/wp-content/uploads/2016/06/facebook-icon.png) no-repeat;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+}
+*/
+
+/* END my nav-menu styles */
+
 /* END */
 
 
