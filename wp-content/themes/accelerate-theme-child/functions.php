@@ -44,3 +44,13 @@
 
 // Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
+
+// Enqueue scripts and styles.
+function accelerate_child_scripts()  {
+  if ( is_404() ) {
+    wp_enqueue_script('404', get_stylesheet_directory_uri(), array('jquery'), false, false );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
+?>
