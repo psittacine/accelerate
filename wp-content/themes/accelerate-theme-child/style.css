@@ -193,8 +193,10 @@ li.menu-item-14 {
 /* https://github.com/skillcrush/accelerate/blob/case-studies-static/wp-content/themes/accelerate-theme-child/style.css */
 article.case-study {
     clear: both;
-    margin: 40px 0 0;
+    margin: 40px 0 40px -160px;
+    width: 960px;
 }
+/* margin tweaked after about styles edited */
 
 aside.case-study-sidebar {
 float: left;
@@ -453,6 +455,155 @@ a.about-button {
 }
 
 /* END About page */
+
+
+/* 404 page MAP */
+
+.notfound-container {
+  width: 790px;
+  margin: 122px auto 0 auto;
+  padding: 0;
+}
+
+section.notfound-content {
+  margin-bottom: 250px;
+}
+
+.notfound-content-container {
+  overflow:auto;
+  width: 790px;
+  margin: 0 -10px;
+}
+
+.notfound-content h3 {
+  font-family: Montserrat;
+  color: #45ac9d;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.fig-notfound {
+  float: left;
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+
+div.txt-notfound {
+  float: left;
+  width: 540px;
+  margin: -38px 0 0 0;
+  padding: 0 0 0 47px;
+  vertical-align: top;
+}
+
+.txt-notfound p {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.txt-notfound a {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  color: #45ac9d;
+  font-weight: bold;
+}
+
+/* END 404 page MAP */
+
+
+/* 404 page - js */
+.matrix {
+    margin: 1em auto;
+    font-family: monospace;
+    width: 450px;
+    height: 288px;
+    overflow: hidden;
+    background: #000;
+    background-image: gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+    color: rgba(0, 255, 0, .7);
+    text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+    position: relative;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fall {
+    from {
+        top: -250px;
+    }
+    to {
+        top: 300px;
+    }
+}
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fall {
+    from {
+        top: -250px;
+    }
+    to {
+        top: 300px;
+    }
+}
+@-ms-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-ms-keyframes fall {
+    from {
+        top: -250px;
+    }
+    to {
+        top: 300px;
+    }
+}
+.matrix span {
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 0%;
+    -webkit-transform: rotate(90deg);
+    -webkit-animation-name: fall, fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-out;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    animation-name: fall, fade;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    -ms-animation-name: fall, fade;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: normal;
+    -ms-animation-timing-function: ease-out;
+    -moz-transform-origin: 0%;
+    -moz-transform: rotate(90deg);
+    -moz-animation-name: fall, fade;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-timing-function: ease-out;
+    color: rgb(0, 255, 0);
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+    width: 100%;
+}
+/* END 404 page */
 
 
 
