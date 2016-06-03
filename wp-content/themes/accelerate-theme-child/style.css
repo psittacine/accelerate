@@ -458,6 +458,7 @@ a.about-button {
 
 
 /* 404 page MAP */
+/* Shows if <noscript> */
 
 .notfound-container {
   width: 790px;
@@ -512,8 +513,19 @@ div.txt-notfound {
 
 /* END 404 page MAP */
 
+div.matrix-container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+/* 404 page - matrix jQuery */
 
-/* 404 page - js */
+div.matrix-container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+/* Start jQuery plugin code below */
+
 .matrix {
     margin: 1em auto;
     font-family: monospace;
@@ -604,6 +616,7 @@ div.txt-notfound {
     width: 100%;
 }
 /* END 404 page */
+
 
 
 /*  OUTLINE BOXES  */

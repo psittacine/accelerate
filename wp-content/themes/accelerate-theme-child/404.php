@@ -19,22 +19,49 @@ get_header(); ?>
 	<div id="primary" class="site-content">
 <!-- stuff that is constrained in middle boundaries; normal width -->
 
-<section class="notfound-container">
-	<div class="site-content">
+<div class="matrix-container">
+<!-- Matrix Rain effect, jQuery plugin -->
+<div id="matrix">
 
-		<section class="notfound-content">
-			<div class="notfound-content-container">
-				<figure class="fig-notfound"><img src="//localhost/skillcrush/accelerate/wp-content/uploads/2016/06/map404.png" alt="map" /></figure>
-				<div class="txt-notfound">
-					<h3>Whoops, Took a Wrong Turn…</h3>
-					<p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you.</p>
-					<p>Feel free to take a look around our <a href="blog">blog</a> or some of our featured <a href="case-studies">work</a>.</p>
-				</div>
-			</div>
-  	</section>
+  <span>404 Not Found</span>
 
-	</div><!-- .site-content -->
-</section>
+  <span>00110100 00110000 00110100</span>
+
+  <span>404 Not Found 404 Not Found 404 Not Found</span>
+
+  <span>00110100 00110000 00110100</span>
+
+  <span>404 Not Found 404 Not Found</span>
+
+  <span>00110100 00110000 00110100</span>
+
+  <span>404 Not Found</span>
+
+  <span>00110100 00110000 00110100</span>
+
+</div>
+
+<script>
+jQuery( document ).ready( function( $ ) {
+    // $() will work as an alias for jQuery() inside of this function
+
+		$.fn.Matrix = function (options) {
+		    var container = $(this);
+		    container.addClass("matrix");
+		    container.children().each(function () {
+		        $(this).css("-webkit-animation-duration", Math.floor((Math.random() * 20) + 3) + "s").css("animation-duration", Math.floor((Math.random() * 20) + 3) + "s").css("-ms-animation-duration", Math.floor((Math.random() * 20) + 3) + "s").css("-moz-animation-duration", Math.floor((Math.random() * 20) + 3) + "s").css("left", Math.floor((Math.random() * parseInt($(container).width())) + 10)).css("font-size", Math.floor((Math.random() * 20) + 10) + "px");
+		    });
+		};
+
+		jQuery(function ($) {
+		    $("#matrix").Matrix();
+		});
+
+} );
+</script>
+<!-- END Matrix Rain effect, jQuery plugin -->
+</div>
+
 
 	</div><!-- #primary -->
 
