@@ -166,8 +166,10 @@ li.menu-item-14 {
     overflow: hidden;
 }
 .blog-post {
-	width: 44.75%;
-	padding-right: 50px;
+	/* width: 44.75%; */
+  width: 425px;
+	/* padding-right: 50px; */
+  padding-right: 55px;
 	float: left;
 }
 .blog-post h4 {
@@ -180,12 +182,68 @@ li.menu-item-14 {
 	font: 700 24px 'Montserrat';
 	margin: 36px 0;
 }
+.blog-post p {
+  margin-bottom: 36px;
+}
 .blog-post .read-more-link {
 	font: 700 15px 'Montserrat';
 	color: #45ac9d;
 	text-transform: uppercase;
 }
-/* END */
+
+/* Twitter Module */
+/*
+To make styling easier the <ul> has a class of Tweets – <ul class="tweets">
+Each Tweet is a list item <li>
+Each Time reference is an emphasised link (to your Twitter page) <em><a>
+*/
+.twitter-module-container {
+    clear: both;
+    margin: 100px 0 0;
+    overflow: hidden;
+}
+.twitter-module {
+	width: 425px;
+  padding-left: 55px;
+	float: left;
+}
+h3.widget-title {
+	font: 16px 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin: 0;
+  padding-bottom: 36px;
+}
+aside#pi_simpletwittertweets-2 {
+  padding: 0;
+}
+ul.tweets::before {
+  content: "@Accelerate";
+  display: block;
+  padding-bottom: 36px;
+  font: 700 24px 'Montserrat';
+}
+ul.tweets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 36px 0;
+  width: 425px;
+}
+.tweets li {
+  display: inline;
+  font: 17px/1.65 'open sans', Arial, sans-serif;
+}
+a.twitter-follow-link {
+	font: 700 15px 'Montserrat';
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+.twitter-module p {
+  margin: 0;
+}
+/* end Twitter Module */
+
+/* END homepage */
 
 /* Lesson Challenge: Edit Your Single Case Studies Page */
 /* http://skillcrush.com/skill-challenges/edit-single-case-studies-page/ */

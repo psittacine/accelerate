@@ -57,9 +57,21 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>" class="read-more-link">Read More <span>&rsaquo;</span></a>
 			<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
-
  		</div>
-	</div>
-</section>
+
+<!-- Twitter Module - ADD THE NEW DYNAMIC SIDEBAR -->
+		<div class="twitter-module">
+			<!-- <h3 class="widget-title">Recent Tweet</h3> -->
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+					<div id="secondary" class="widget-area" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-2' ); ?>
+					</div>
+				<?php endif; ?>
+				<p><a href="<?php $twitter_link = the_field('twitter_link'); ?>" class="twitter-follow-link"><?php $twitter_link_name = the_field('twitter_link_name'); ?> &rsaquo;</a></p>
+		</div><!-- twitter-module -->
+
+	</div><!-- site-content -->
+</section><!-- recent-posts -->
+
 
 <?php get_footer(); ?>
