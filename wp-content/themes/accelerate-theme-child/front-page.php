@@ -65,9 +65,9 @@ get_header(); ?>
 				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 					<div id="secondary" class="widget-area" role="complementary">
 						<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						<p><a href="<?php $twitter_link = the_field('twitter_link'); ?>" class="twitter-follow-link"><?php $twitter_link_name = the_field('twitter_link_name'); ?> &rsaquo;</a></p>
 					</div>
 				<?php endif; ?>
-				<p><a href="<?php $twitter_link = the_field('twitter_link'); ?>" class="twitter-follow-link"><?php $twitter_link_name = the_field('twitter_link_name'); ?> &rsaquo;</a></p>
 		</div><!-- twitter-module -->
 
 	</div><!-- site-content -->
