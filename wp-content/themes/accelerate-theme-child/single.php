@@ -3,11 +3,16 @@
  * The Template for displaying all single posts
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Marketing 1.0
  */
 
 get_header(); ?>
+
+<!-- From page.php -->
+<div id="primary" class="site-content">
+<!-- END From page.php -->
+
 
 	<!-- BLOG PAGE -->
 	<section class="blog-page">
@@ -48,17 +53,17 @@ get_header(); ?>
 						<h3 class="comment-reply-title">Leave a comment</h3>
 						<form action="" method="post" id="commentform" class="comment-form default-form">
 							<div class="form-author">
-								<label for="author">Name</label> 
+								<label for="author">Name</label>
 								<input id="author" name="author" type="text" value="" aria-required="true">
 							</div>
 							<div class="form-email">
-								<label for="email">Email <span>(hidden)</span></label> 
+								<label for="email">Email <span>(hidden)</span></label>
 								<input id="email" name="email" type="email" value="" aria-required="true">
 							</div>
 							<div class="form-comment">
-								<label for="comment">Your comment</label> 
+								<label for="comment">Your comment</label>
 								<textarea id="comment" name="comment" rows="8" aria-required="true"></textarea>
-							</div>						
+							</div>
 							<input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
 						</form>
 					</div>
@@ -75,8 +80,14 @@ get_header(); ?>
 	<footer class="navigation container">
 		<div class="left">&larr;<a href="">back to posts</a></div>
 	</footer>
-	
+
 				<?php endwhile; ?>
+
+
+<!-- From page.php -->
+</div><!-- #primary -->
+<!-- END From page.php -->
+
 
 <?php
 get_footer();
