@@ -258,6 +258,12 @@ input#searchsubmit {
 }
 /* end MailChimp Newsletter widget */
 
+/* remove bullet points from sidebar widget lists */
+aside.sidebar > aside > ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 /* END Blog page */
 
 
