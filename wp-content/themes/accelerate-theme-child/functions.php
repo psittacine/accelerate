@@ -42,7 +42,6 @@
         )
     );
 }
-
 // Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
 
@@ -72,6 +71,20 @@ function accelerate_child_scripts()  {
   }
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
+
+// Refresh permalinks reminder - admin notice on dashboard index page only.
+add_action('current_screen', 'message_dashboard_screen');
+function message_dashboard_screen() {
+  $current_screen = get_current_screen();
+  if($current_screen ->id === "dashboard") {
+    // The following code would make the notice appear on all admin screens, if not wrapped in above code.
+    add_action('admin_notices', 'admin_notice_refresh_permalinks');
+    function admin_notice_refresh_permalinks() {
+      echo '<div class="error"><p>Remember to refresh the <a href="options-permalink.php">permalinks</a>!</p></div>';
+    }
+  }
+}
 
 
 
