@@ -66,8 +66,9 @@ add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
 
 // Enqueue scripts and styles.
 function accelerate_child_scripts()  {
+  // enqueue Matrix Rain jQuery effect on 404 page only.
   if ( is_404() ) {
-    wp_enqueue_script('404', get_stylesheet_directory_uri(), array('jquery'), false, false );
+    wp_enqueue_script('404', get_stylesheet_directory_uri() . '/js/matrix-rain.js', array('jquery'), '20160604', false );
   }
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
